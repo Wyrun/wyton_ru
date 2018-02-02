@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Brandon_bld";
+  src: url('Brandon_bld.otf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url('Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url('Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url('Roboto-Bold.ttf') format('truetype');
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f9ff;
+  color: #292e33;
+}
+
+.container{
+  width:80%;
+  overflow:hidden;
+  margin: auto;
+}
+
+.highlight{
+  color: #106a8b;
+  font-family: "Roboto-Regular", "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+
+ .link:hover{
+   opacity: 0.85;
+ }
+
+
+/*
+.highlight-b{
+  color: #106a8b;
+  font-family: "Roboto-Regular", "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+
+.highlight-y{
+  color: #947b83;
+  font-family: "Roboto-Regular", "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+
+.highlight-dark-b{
+  color: #415262;
+  font-family: "Roboto-Regular", "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+
+.highlight-g{
+  color: #318394;
+  font-family: "Roboto-Regular", "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+
+.highlight-r{
+  color: #318394;
+  font-family: "Roboto-Regular", "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+*/
+
+header{
+  padding: 4em;
+}
+
+h1{
+  font-size: 2em;
+}
+
+.h1{
+  font-size: 1.3em;
+}
+
+.h2{
+  padding: 0 1.5em;
+  margin-bottom: 3em;
+}
+
+.h3{
+  position: relative;
+  /*background: #eeff00ee;*/
+  padding:30px;
+}
+
+.main .container{
+  overflow: visible;
+  width:80%;
+}
+
+h2{
+  font-family: "Brandon_bld", Helvetica, Arial, sans-serif;
+  font-size: 10em;
+  position: absolute;
+  overflow: visible;
+  top:-1.5em;
+  /* color: #415262; */
+  color: #7b414a;
+}
+
+.main{
+  margin-bottom: 0;
+}
+
+.main .blackThemed{
+  background: #292e33;
+  padding: 2em;
+  border-radius: 1em 1em 0 0;
+}
+
+.main .blackThemed #showcase{
+  overflow: hidden;
+}
+
+#projects{
+  display: flex;
+}
+
+#slides{
+  flex: 7;
+}
+
+#slides img{
+  width: 100%;
+  height: 100%;
+}
+
+#project-info{
+  flex: 3;
+  color: #f2f9ff;
+  padding: 0 1em;
+}
+
+#project-info h4{
+  margin: 0;
+  font-size: 2em;
+}
+
+#contacts{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#contacts div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+#contacts div a, #contacts div p{
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+  color: #f2f9ff;
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+#Facebook{
+  background: #106a8b;
+}
+
+#GitHub{
+  background: #73737B;
+}
+
+#Email{
+  background: #106a8b;
+}
+
+#Discord{
+  background: #73737B;
+}
+
+/*
+#Facebook{
+  background: #106a8b;
+}*/
+
+
+footer{
+  height:100%;
+  width:100%;
+  margin: 0;
+  background-color: #7b414a;
+  border-top: 1px #7b414a solid;
+  color: #f2f9ff;
+  overflow: hidden;
+}
+
+footer p{
+  left: 10%;
+  position: relative;
+}
+
+@media(max-width: 1080px){
+  #contacts{
+    flex-direction: column;
+    height: 10em;
+  }
+
+  #contacts div{
+    margin: 2px;
+  }
+
+  #Facebook{
+    background: #106a8b;
+  }
+
+  #GitHub{
+    background: #73737B;
+  }
+
+  #Email{
+    background: #106a8b;
+  }
+
+  #Discord{
+    background: #73737B;
+  }
+
+  #projects{
+    flex-direction: column;
+  }
+
+  #projects h4{
+    margin-top: 1em;
+  }
+
+    header{
+      padding: 2em;
+    }
+    .h2{
+      padding: 0 0 0 0.5em;
+      font-size: 0.95em;
+    }
+}
+
+@media(max-width: 800px){
+  header{
+    padding: 2em;
+  }
+
+  .h2{
+    padding: 0 0 0 0.5em;
+    font-size: 0.7em;
+  }
+  .container, .main .container{
+    width:88%;
+  }
+}
+
+@media(max-width: 650px){
+  .main h2{
+    font-size: 5em;
+    top:-1.1em;
+  }
+
+  .h2{
+    margin-bottom: 0;
+    font-size: 0.6em;
+}
+
+  .container, .main .container{
+    width:92%;
+  }
+}
